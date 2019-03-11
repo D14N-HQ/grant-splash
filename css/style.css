@@ -352,7 +352,7 @@ h6 {
 }
 
 .header__menu>ul>li.menu-item-has-children>a {
-  background: url(images/drop-down.png) no-repeat 90% 50%;
+  background: url(./images/drop-down.png) no-repeat 90% 50%;
 }
 
 .header__menu ul ul {
@@ -1131,7 +1131,7 @@ svg.svg-intro-right {
 }
 
 .grid--about .grid__list li {
-  background: url(images/checked.png) no-repeat 0 50%;
+  background: url(./images/checked.png) no-repeat 0 50%;
   font-size: 18px;
   padding: 10px 0 10px 40px;
 }
@@ -1568,11 +1568,11 @@ svg.svg-features-bottom {
   padding: 3px 0 3px 12%;
   text-align: left;
   line-height: 24px;
-  background: url(images/checked-pricing.png) no-repeat 0 50%;
+  background: url(./images/checked-pricing.png) no-repeat 0 50%;
 }
 
 .pricing__plan--popular .pricing__list li {
-  background: url(images/checked-pricing-white.png) no-repeat 0 50%;
+  background: url(./images/checked-pricing-white.png) no-repeat 0 50%;
 }
 
 .pricing__list li.disabled {
@@ -1972,7 +1972,7 @@ svg.svg-cta-bottom {
 
 .team-photo {
   height: 320px;
-  background-image: url('/images/team-photo.jpg');
+  background-image: url('./images/team-photo.jpg');
   background-size: cover;
   background-position: 50% 44%;
   margin-bottom: 80px;
