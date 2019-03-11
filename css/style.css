@@ -2754,6 +2754,11 @@ ul.grid__list--fmenu li a:hover {
     max-width: 180px;
     text-align: center;
   }
+
+  .contact-socials {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 /*===============================================*/
