@@ -78,15 +78,21 @@ $(document).ready(function () {
 	return this.each(function() {
 	cssmenu.prepend('<div class="menu-button"></div>');
 	$(this).find(".menu-button").on('click', function(){
-	  $(this).parent().parent().parent().toggleClass('menu-open');
+		var $parent = $(this).parent().parent().parent();
+		$parent.toggleClass('menu-open');
+		if ($parent.hasClass('menu-open')) {
+			$parent.addClass('header--sticky');
+		} else {
+			navScroll();
+		}
 
 	  var mainmenu = $(this).next('ul');
 	  mainmenu.toggleClass('open'); 
 	  if (mainmenu.hasClass('open')) { 
-		mainmenu.show();
+			mainmenu.show();
 	  }
 	  else {
-		mainmenu.hide();
+			mainmenu.hide();
 	  }
 		$('.header__menu ul a[href^="#"]').on('click', function (e) {
 				$('.header__menu ul').removeClass('open'); 
