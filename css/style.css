@@ -424,8 +424,6 @@ h6 {
   position: relative;
   width: 100%;
   height: auto;
-  float: left;
-  clear: both;
 }
 
 
@@ -514,6 +512,21 @@ h6 {
   padding: 0 0 80px 0;
 }
 
+.section-divider {
+  clear: both;
+  width: 100%;
+  margin: 70px auto 100px;
+  max-width: 1080px;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.08) 10%,
+    rgba(0, 0, 0, 0.08) 90%,
+    rgba(0, 0, 0, 0)
+  );
+}
+
 
 /*===============================================*/
 
@@ -528,8 +541,11 @@ h6 {
 
 .grid {
   width: 100%;
-  float: left;
+}
+.grid::after {
+  content: "";
   clear: both;
+  display: table;
 }
 
 .grid__item--padding {
@@ -1100,6 +1116,10 @@ svg.svg-intro-right {
 
 /*===============================================*/
 
+.section--about .section__content--padding {
+  padding-bottom: 0;
+}
+
 .grid--about .grid__title {
   font-size: 36px;
   line-height: 42px;
@@ -1233,6 +1253,9 @@ svg.svg-features-bottom {
 
 /*===============================================*/
 
+.section--testimonials .section__content--padding {
+  padding-top: 0;
+}
 
 .testimonial {
   display: flex;
@@ -1622,6 +1645,9 @@ svg.svg-features-bottom {
   position: relative;
   color: #fff;
   padding-top: 80px;
+}
+.section--cta .intro__buttons .btn {
+  margin-bottom: 0;
 }
 
 svg.svg-cta-top {
@@ -2447,6 +2473,10 @@ ul.grid__list--fmenu li a:hover {
     width: 80%;
     padding: 0 0 40px 0;
   }
+  .section-divider {
+    width: 80%;
+    margin: 20px auto 60px;
+  }
   /*       GRID 	   */
   /*=====================*/
   .grid--2col .grid__item,
@@ -2572,6 +2602,9 @@ ul.grid__list--fmenu li a:hover {
     font-size: 16px;
     line-height: 24px;
   }
+  .grid--about .grid__image {
+    display: none;
+  }
   /*  TESTIMONIALS  */
   /*----------------*/
   .testimonial {
@@ -2671,11 +2704,14 @@ ul.grid__list--fmenu li a:hover {
   .section--cta {
     padding-top: 0px;
   }
+  .section--cta .section__content {
+    padding: 12vw 0;
+  }
   svg.svg-cta-top {
-    height: 20px;
+    height: 7vw;
   }
   svg.svg-cta-bottom {
-    height: 20px;
+    height: 7vw;
   }
   /*  Team  */
   /*--------*/
@@ -2695,6 +2731,10 @@ ul.grid__list--fmenu li a:hover {
 /*===============================================*/
 
 @media screen and (max-width: 700px) {
+  .section-divider {
+    margin: 0 auto 40px;
+  }
+
   .intro {
     padding-top: 100px;
   }
